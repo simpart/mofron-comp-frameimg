@@ -1,0 +1,29 @@
+{
+  "name": "mofron-comp-frameimg",
+  "version": "0.0.2",
+  "description": "image in frame component for mofron",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "mofron-comp-frame": "",
+    "mofron-comp-image": "",
+    "mofron-effect-hrzpos": "",
+    "mofron-effect-vrtpos": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simpart/mofron-comp-frameimg.git"
+  },
+  "keywords": [
+    "mofron",
+    "front-end"
+  ],
+  "author": "simparts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simpart/mofron-comp-frameimg/issues"
+  },
+  "homepage": "https://github.com/simpart/mofron-comp-frameimg#readme"
+}
