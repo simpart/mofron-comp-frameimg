@@ -7,6 +7,7 @@ const Frame  = require('mofron-comp-frame');
 const Image  = require('mofron-comp-image');
 const HrzPos = require('mofron-effect-hrzpos');
 const VrtPos = require('mofron-effect-vrtpos');
+const Link   = require('mofron-event-link');
 const comutl = mofron.util.common;
 
 module.exports = class extends Frame {
@@ -53,7 +54,7 @@ module.exports = class extends Frame {
         }
     }
     
-    imgSize (prm) {
+    imageSize (prm) {
         try {
             this.image().size(prm,prm);
 	} catch (e) {
@@ -75,6 +76,18 @@ module.exports = class extends Frame {
         try {
             return this.image().src(prm);
         } catch (e) {
+            console.error(e.stack);
+            throw e;
+        }
+    }
+
+    href (prm, tab) {
+        try {
+	    if (undefined === prm) {
+                return this.event({ modname:'Link' }).url();
+	    }
+            this.event(new Link(prm,tab));
+	} catch (e) {
             console.error(e.stack);
             throw e;
         }
