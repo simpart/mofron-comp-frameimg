@@ -1,6 +1,6 @@
 {
   "name": "mofron-comp-frameimg",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "image in frame component for mofron",
   "main": "index.js",
   "scripts": {
